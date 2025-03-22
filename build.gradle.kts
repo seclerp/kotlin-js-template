@@ -2,7 +2,7 @@ plugins {
     alias(libs.plugins.kotlin.multiplatform)
 }
 
-group = "com.github"
+group = "com.github.kjs.template"
 version = "1.0-SNAPSHOT"
 
 repositories {

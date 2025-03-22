@@ -1,4 +1,4 @@
-﻿package com.github.template
+﻿package com.github.kjs.template
 
 import kotlinx.browser.document
 import kotlinx.dom.appendElement
