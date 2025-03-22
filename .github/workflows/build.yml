@@ -1,4 +1,4 @@
-﻿name: Build and Test
+﻿name: Build
 
 on:
   push:
@@ -25,10 +25,7 @@ jobs:
       - name: Setup Gradle
         uses: gradle/gradle-build-action@v2
 
-      - name: Build
+      - name: Build & Test
         run: |
           chmod +x ./gradlew
           ./gradlew build
-
-      - name: Test
-        run: ./gradlew jsBrowserTest
