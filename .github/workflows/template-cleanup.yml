@@ -54,6 +54,7 @@ jobs:
 
           # Cleanup
           rm -rf \
+            .github/readme \
             .github/template-cleanup \
             .github/workflows/template-cleanup.yml \
             src/jsMain/kotlin/com/github/kjs/template \
