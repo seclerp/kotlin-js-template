@@ -39,6 +39,12 @@ jobs:
           find src -type f -exec sed -i "s/com.github.kjs.template/$GROUP/g" {} +
           find src -type f -exec sed -i "s/kotlin-js-template/$NAME/g" {} +
 
+          # Replace with some of the root files
+          for file in build.gradle.kts settings.gradle.kts; do
+            sed -i "s/com.github.kjs.template/$GROUP/g" "$file"
+            sed -i "s/kotlin-js-template/$NAME/g" "$file"
+          done
+
           # Move content
           mkdir -p src/jsMain/kotlin/${GROUP//.//}
           mkdir -p src/jsTest/kotlin/${GROUP//.//}
