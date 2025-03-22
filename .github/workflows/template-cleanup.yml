@@ -50,8 +50,8 @@ jobs:
           rm -rf \
             .github/template-cleanup \
             .github/workflows/template-cleanup.yml \
-            src/jsMain/kotlin/org \
-            src/jsTest/kotlin/org \
+            src/jsMain/kotlin/com/github/kjs/template \
+            src/jsTest/kotlin/com/github/kjs/template \
             LICENSE
 
       # Commit modified files
