@@ -6,7 +6,7 @@ A GitHub repository template for a bare-bone Kotlin/JS-based browser application
 
 - Gradlew-wrapper-based project
 - No frontend frameworks, just vanilla JS
-- Kotlin 2.1.20
+- Kotlin 2.3.10
 - Test infrastructure based on Karma + headless Chromium
 - Basic CI/CD
 - Dependabot weekly checks
